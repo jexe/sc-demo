@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:SoundCloudDemo"
+      name = "SoundCloudDemo">
+      <Group
+         location = "group:SoundCloudDemo"
+         name = "SoundCloudDemo">
+         <FileRef
+            location = "group:AppDelegate.h">
+         </FileRef>
+         <FileRef
+            location = "group:AppDelegate.m">
+         </FileRef>
+         <FileRef
+            location = "group:Default-568h@2x.png">
+         </FileRef>
+         <FileRef
+            location = "group:Default.png">
+         </FileRef>
+         <FileRef
+            location = "group:Default@2x.png">
+         </FileRef>
+         <Group
+            location = "group:en.lproj"
+            name = "en.lproj">
+            <FileRef
+               location = "group:InfoPlist.strings">
+            </FileRef>
+            <FileRef
+               location = "group:ViewController_iPad.xib">
+            </FileRef>
+            <FileRef
+               location = "group:ViewController_iPhone.xib">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:main.m">
+         </FileRef>
+         <FileRef
+            location = "group:SoundCloudDemo-Info.plist">
+         </FileRef>
+         <FileRef
+            location = "group:SoundCloudDemo-Prefix.pch">
+         </FileRef>
+         <FileRef
+            location = "group:ViewController.h">
+         </FileRef>
+         <FileRef
+            location = "group:ViewController.m">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:SoundCloudDemo.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:CocoaSoundCloudAPI"
+      name = "CocoaSoundCloudAPI">
+      <FileRef
+         location = "group:Changes.md">
+      </FileRef>
+      <FileRef
+         location = "group:GeneralUsage.md">
+      </FileRef>
+      <FileRef
+         location = "group:LICENSE">
+      </FileRef>
+      <FileRef
+         location = "group:NOTICE">
+      </FileRef>
+      <FileRef
+         location = "group:README.md">
+      </FileRef>
+      <FileRef
+         location = "group:Setup.md">
+      </FileRef>
+      <FileRef
+         location = "group:Sharing.md">
+      </FileRef>
+      <FileRef
+         location = "group:SoundCloudAPI.framework-Info.plist">
+      </FileRef>
+      <FileRef
+         location = "group:SoundCloudAPI.xcodeproj">
+      </FileRef>
+      <Group
+         location = "group:Sources"
+         name = "Sources">
+         <Group
+            location = "group:SoundCloudAPI"
+            name = "SoundCloudAPI">
+            <FileRef
+               location = "group:SCAccount+Private.h">
+            </FileRef>
+            <FileRef
+               location = "group:SCAccount+Private.m">
+            </FileRef>
+            <FileRef
+               location = "group:SCAccount.h">
+            </FileRef>
+            <FileRef
+               location = "group:SCAccount.m">
+            </FileRef>
+            <FileRef
+               location = "group:SCAPI.h">
+            </FileRef>
+            <FileRef
+               location = "group:SCConstants.h">
+            </FileRef>
+            <FileRef
+               location = "group:SCConstants.m">
+            </FileRef>
+            <FileRef
+               location = "group:SCRequest.h">
+            </FileRef>
+            <FileRef
+               location = "group:SCRequest.m">
+            </FileRef>
+            <FileRef
+               location = "group:SCSoundCloud+Private.h">
+            </FileRef>
+            <FileRef
+               location = "group:SCSoundCloud+Private.m">
+            </FileRef>
+            <FileRef
+               location = "group:SCSoundCloud.h">
+            </FileRef>
+            <FileRef
+               location = "group:SCSoundCloud.m">
+            </FileRef>
+            <FileRef
+               location = "group:SCSoundCloudAPI-Private.h">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:SoundCloudAPI_Prefix.pch">
+         </FileRef>
+      </Group>
+   </Group>
+   <Group
+      location = "group:CocoaSoundCloudUI"
+      name = "CocoaSoundCloudUI">
+      <FileRef
+         location = "group:LICENSE">
+      </FileRef>
+      <FileRef
+         location = "group:NOTICE">
+      </FileRef>
+      <FileRef
+         location = "group:README.md">
+      </FileRef>
+      <FileRef
+         location = "group:SoundCloud.bundle">
+      </FileRef>
+      <FileRef
+         location = "group:SoundCloudUI-Info.plist">
+      </FileRef>
+      <FileRef
+         location = "group:SoundCloudUI.xcodeproj">
+      </FileRef>
+      <Group
+         location = "group:Sources"
+         name = "Sources">
+         <Group
+            location = "group:CocoaAdditions"
+            name = "CocoaAdditions">
+            <FileRef
+               location = "group:NSData+SoundCloudUI.h">
+            </FileRef>
+            <FileRef
+               location = "group:NSData+SoundCloudUI.m">
+            </FileRef>
+            <FileRef
+               location = "group:NSString+SoundCloudUI.h">
+            </FileRef>
+            <FileRef
+               location = "group:NSString+SoundCloudUI.m">
+            </FileRef>
+            <FileRef
+               location = "group:QuartzCore+SoundCloudUI.h">
+            </FileRef>
+            <FileRef
+               location = "group:QuartzCore+SoundCloudUI.m">
+            </FileRef>
+            <FileRef
+               location = "group:UIColor+SoundCloudUI.h">
+            </FileRef>
+            <FileRef
+               location = "group:UIColor+SoundCloudUI.m">
+            </FileRef>
+            <FileRef
+               location = "group:UIDevice+SoundCloudUI.h">
+            </FileRef>
+            <FileRef
+               location = "group:UIDevice+SoundCloudUI.m">
+            </FileRef>
+            <FileRef
+               location = "group:UIImage+SoundCloudUI.h">
+            </FileRef>
+            <FileRef
+               location = "group:UIImage+SoundCloudUI.m">
+            </FileRef>
+            <FileRef
+               location = "group:UIView+SoundCloudUI.h">
+            </FileRef>
+            <FileRef
+               location = "group:UIView+SoundCloudUI.m">
+            </FileRef>
+            <FileRef
+               location = "group:UIViewController+SoundCloudUI.h">
+            </FileRef>
+            <FileRef
+               location = "group:UIViewController+SoundCloudUI.m">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:SoundCloudUI"
+            name = "SoundCloudUI">
+            <FileRef
+               location = "group:SCAddConnectionViewController.h">
+            </FileRef>
+            <FileRef
+               location = "group:SCAddConnectionViewController.m">
+            </FileRef>
+            <FileRef
+               location = "group:SCAddConnectionViewControllerDelegate.h">
+            </FileRef>
+            <FileRef
+               location = "group:SCBundle.h">
+            </FileRef>
+            <FileRef
+               location = "group:SCBundle.m">
+            </FileRef>
+            <FileRef
+               location = "group:SCConnectToSoundCloudTitleView.h">
+            </FileRef>
+            <FileRef
+               location = "group:SCConnectToSoundCloudTitleView.m">
+            </FileRef>
+            <FileRef
+               location = "group:SCCoverImageButton.h">
+            </FileRef>
+            <FileRef
+               location = "group:SCCoverImageButton.m">
+            </FileRef>
+            <FileRef
+               location = "group:SCFoursquarePlacePickerController.h">
+            </FileRef>
+            <FileRef
+               location = "group:SCFoursquarePlacePickerController.m">
+            </FileRef>
+            <FileRef
+               location = "group:SCFoursquarePlacePickerControllerDelegate.h">
+            </FileRef>
+            <FileRef
+               location = "group:SCHorizontalLineView.h">
+            </FileRef>
+            <FileRef
+               location = "group:SCHorizontalLineView.m">
+            </FileRef>
+            <FileRef
+               location = "group:SCLoginView.h">
+            </FileRef>
+            <FileRef
+               location = "group:SCLoginView.m">
+            </FileRef>
+            <FileRef
+               location = "group:SCLoginViewController.h">
+            </FileRef>
+            <FileRef
+               location = "group:SCLoginViewController.m">
+            </FileRef>
+            <FileRef
+               location = "group:SCNameAndEmailCell.h">
+            </FileRef>
+            <FileRef
+               location = "group:SCNameAndEmailCell.m">
+            </FileRef>
+            <FileRef
+               location = "group:SCRecordingSaveViewController.h">
+            </FileRef>
+            <FileRef
+               location = "group:SCRecordingSaveViewController.m">
+            </FileRef>
+            <FileRef
+               location = "group:SCRecordingSaveViewControllerHeaderView.h">
+            </FileRef>
+            <FileRef
+               location = "group:SCRecordingSaveViewControllerHeaderView.m">
+            </FileRef>
+            <FileRef
+               location = "group:SCRecordingUploadProgressView.h">
+            </FileRef>
+            <FileRef
+               location = "group:SCRecordingUploadProgressView.m">
+            </FileRef>
+            <FileRef
+               location = "group:SCShareToSoundCloudTitleView.h">
+            </FileRef>
+            <FileRef
+               location = "group:SCShareToSoundCloudTitleView.m">
+            </FileRef>
+            <FileRef
+               location = "group:SCShareViewController.h">
+            </FileRef>
+            <FileRef
+               location = "group:SCShareViewController.m">
+            </FileRef>
+            <FileRef
+               location = "group:SCSharingMailPickerController.h">
+            </FileRef>
+            <FileRef
+               location = "group:SCSharingMailPickerController.m">
+            </FileRef>
+            <FileRef
+               location = "group:SCSwitch.h">
+            </FileRef>
+            <FileRef
+               location = "group:SCSwitch.m">
+            </FileRef>
+            <FileRef
+               location = "group:SCSwitchLabel.h">
+            </FileRef>
+            <FileRef
+               location = "group:SCSwitchLabel.m">
+            </FileRef>
+            <FileRef
+               location = "group:SCTableCellBackgroundView.h">
+            </FileRef>
+            <FileRef
+               location = "group:SCTableCellBackgroundView.m">
+            </FileRef>
+            <FileRef
+               location = "group:SCTextField.h">
+            </FileRef>
+            <FileRef
+               location = "group:SCTextField.m">
+            </FileRef>
+            <FileRef
+               location = "group:SCUI.h">
+            </FileRef>
+            <FileRef
+               location = "group:SCUIErrors.h">
+            </FileRef>
+            <FileRef
+               location = "group:SCUIErrors.m">
+            </FileRef>
+            <FileRef
+               location = "group:SCUnderlinedButton.h">
+            </FileRef>
+            <FileRef
+               location = "group:SCUnderlinedButton.m">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:SoundCloudUI-Prefix.pch">
+         </FileRef>
+      </Group>
+   </Group>
+   <Group
+      location = "group:JSONKit"
+      name = "JSONKit">
+      <FileRef
+         location = "group:CHANGELOG.md">
+      </FileRef>
+      <Group
+         location = "group:JSONKit"
+         name = "JSONKit">
+         <FileRef
+            location = "group:JSONKit-Info.plist">
+         </FileRef>
+         <FileRef
+            location = "group:JSONKit-Prefix.pch">
+         </FileRef>
+         <FileRef
+            location = "group:JSONKit.h">
+         </FileRef>
+         <FileRef
+            location = "group:JSONKit.m">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:JSONKit.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:README.md">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:OAuth2Client"
+      name = "OAuth2Client">
+      <FileRef
+         location = "group:NXOAuth2Account+Private.h">
+      </FileRef>
+      <FileRef
+         location = "group:NXOAuth2Client.md">
+      </FileRef>
+      <FileRef
+         location = "group:NXOAuth2Client.podspec">
+      </FileRef>
+      <FileRef
+         location = "group:OAuth2Client.framework-Info.plist">
+      </FileRef>
+      <FileRef
+         location = "group:OAuth2Client.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:README.md">
+      </FileRef>
+      <Group
+         location = "group:Sources"
+         name = "Sources">
+         <FileRef
+            location = "group:NSData+NXOAuth2.h">
+         </FileRef>
+         <FileRef
+            location = "group:NSData+NXOAuth2.m">
+         </FileRef>
+         <FileRef
+            location = "group:NSString+NXOAuth2.h">
+         </FileRef>
+         <FileRef
+            location = "group:NSString+NXOAuth2.m">
+         </FileRef>
+         <FileRef
+            location = "group:NSURL+NXOAuth2.h">
+         </FileRef>
+         <FileRef
+            location = "group:NSURL+NXOAuth2.m">
+         </FileRef>
+         <Group
+            location = "group:OAuth2Client"
+            name = "OAuth2Client">
+            <FileRef
+               location = "group:NXOAuth2.h">
+            </FileRef>
+            <FileRef
+               location = "group:NXOAuth2AccessToken.h">
+            </FileRef>
+            <FileRef
+               location = "group:NXOAuth2AccessToken.m">
+            </FileRef>
+            <FileRef
+               location = "group:NXOAuth2Account.h">
+            </FileRef>
+            <FileRef
+               location = "group:NXOAuth2Account.m">
+            </FileRef>
+            <FileRef
+               location = "group:NXOAuth2AccountStore.h">
+            </FileRef>
+            <FileRef
+               location = "group:NXOAuth2AccountStore.m">
+            </FileRef>
+            <FileRef
+               location = "group:NXOAuth2Client.h">
+            </FileRef>
+            <FileRef
+               location = "group:NXOAuth2Client.m">
+            </FileRef>
+            <FileRef
+               location = "group:NXOAuth2ClientDelegate.h">
+            </FileRef>
+            <FileRef
+               location = "group:NXOAuth2Connection.h">
+            </FileRef>
+            <FileRef
+               location = "group:NXOAuth2Connection.m">
+            </FileRef>
+            <FileRef
+               location = "group:NXOAuth2ConnectionDelegate.h">
+            </FileRef>
+            <FileRef
+               location = "group:NXOAuth2Constants.h">
+            </FileRef>
+            <FileRef
+               location = "group:NXOAuth2Constants.m">
+            </FileRef>
+            <FileRef
+               location = "group:NXOAuth2FileStreamWrapper.h">
+            </FileRef>
+            <FileRef
+               location = "group:NXOAuth2FileStreamWrapper.m">
+            </FileRef>
+            <FileRef
+               location = "group:NXOAuth2PostBodyPart.h">
+            </FileRef>
+            <FileRef
+               location = "group:NXOAuth2PostBodyPart.m">
+            </FileRef>
+            <FileRef
+               location = "group:NXOAuth2PostBodyStream.h">
+            </FileRef>
+            <FileRef
+               location = "group:NXOAuth2PostBodyStream.m">
+            </FileRef>
+            <FileRef
+               location = "group:NXOAuth2Request.h">
+            </FileRef>
+            <FileRef
+               location = "group:NXOAuth2Request.m">
+            </FileRef>
+            <FileRef
+               location = "group:NXOAuth2TrustDelegate.h">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:OAuth2Client_Prefix.pch">
+         </FileRef>
+      </Group>
+   </Group>
+   <Group
+      location = "group:OHAttributedLabel"
+      name = "OHAttributedLabel">
+      <Group
+         location = "group:AttributedLabel Example"
+         name = "AttributedLabel Example">
+         <FileRef
+            location = "group:AttributedLabel Example.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:AttributedLabel_Example-Info.plist">
+         </FileRef>
+         <FileRef
+            location = "group:AttributedLabel_Example_Prefix.pch">
+         </FileRef>
+         <Group
+            location = "group:Classes"
+            name = "Classes">
+            <FileRef
+               location = "group:AttributedLabel_ExampleAppDelegate.h">
+            </FileRef>
+            <FileRef
+               location = "group:AttributedLabel_ExampleAppDelegate.m">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Icon.png">
+         </FileRef>
+         <FileRef
+            location = "group:main.m">
+         </FileRef>
+         <FileRef
+            location = "group:MainWindow.xib">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:LICENSE">
+      </FileRef>
+      <Group
+         location = "group:OHAttributedLabel"
+         name = "OHAttributedLabel">
+         <FileRef
+            location = "group:NSAttributedString+Attributes.h">
+         </FileRef>
+         <FileRef
+            location = "group:NSAttributedString+Attributes.m">
+         </FileRef>
+         <FileRef
+            location = "group:OHAttributedLabel-Prefix.pch">
+         </FileRef>
+         <FileRef
+            location = "group:OHAttributedLabel.h">
+         </FileRef>
+         <FileRef
+            location = "group:OHAttributedLabel.m">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:OHAttributedLabel.podspec">
+      </FileRef>
+      <FileRef
+         location = "group:OHAttributedLabel.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:README">
+      </FileRef>
+   </Group>
+</Workspace>
