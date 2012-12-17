@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		795C5941167ED36700AD7219 /* UIImageView+URLLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 795C5940167ED36700AD7219 /* UIImageView+URLLoader.m */; };
+		795C5944167ED54300AD7219 /* TrackSummaryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 795C5943167ED54300AD7219 /* TrackSummaryCell.m */; };
 		79C2E6AC167590E600BA6A8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C2E6AB167590E600BA6A8C /* UIKit.framework */; };
 		79C2E6AE167590E600BA6A8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C2E6AD167590E600BA6A8C /* Foundation.framework */; };
 		79C2E6B0167590E600BA6A8C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C2E6AF167590E600BA6A8C /* CoreGraphics.framework */; };
@@ -33,6 +35,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		795C593F167ED36700AD7219 /* UIImageView+URLLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+URLLoader.h"; path = "Views/UIImageView+URLLoader.h"; sourceTree = "<group>"; };
+		795C5940167ED36700AD7219 /* UIImageView+URLLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+URLLoader.m"; path = "Views/UIImageView+URLLoader.m"; sourceTree = "<group>"; };
+		795C5942167ED54300AD7219 /* TrackSummaryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrackSummaryCell.h; path = Views/TrackSummaryCell.h; sourceTree = "<group>"; };
+		795C5943167ED54300AD7219 /* TrackSummaryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrackSummaryCell.m; path = Views/TrackSummaryCell.m; sourceTree = "<group>"; };
 		79C2E6A7167590E600BA6A8C /* SoundCloudDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundCloudDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79C2E6AB167590E600BA6A8C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		79C2E6AD167590E600BA6A8C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -49,18 +55,18 @@
 		79C2E6C3167590E700BA6A8C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		79C2E6C4167590E700BA6A8C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		79C2E6C7167590E700BA6A8C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
-		79C2E6ED167835D100BA6A8C /* libJSONKit.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libJSONKit.a; path = "../JSONKit/build/Release-iphoneos/libJSONKit.a"; sourceTree = "<group>"; };
-		79C2E6EE167835D100BA6A8C /* libOAuth2Client.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libOAuth2Client.a; path = "../OAuth2Client/build/Release-iphoneos/libOAuth2Client.a"; sourceTree = "<group>"; };
-		79C2E6EF167835D100BA6A8C /* libOHAttributedLabel.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libOHAttributedLabel.a; path = "../OHAttributedLabel/build/Release-iphoneos/libOHAttributedLabel.a"; sourceTree = "<group>"; };
-		79C2E6F0167835D100BA6A8C /* libSoundCloudAPI.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libSoundCloudAPI.a; path = "../CocoaSoundCloudAPI/build/Release-iphoneos/libSoundCloudAPI.a"; sourceTree = "<group>"; };
-		79C2E6F1167835D100BA6A8C /* libSoundCloudUI.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libSoundCloudUI.a; path = "../CocoaSoundCloudUI/build/Release-iphoneos/libSoundCloudUI.a"; sourceTree = "<group>"; };
+		79C2E6ED167835D100BA6A8C /* libJSONKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJSONKit.a; path = "../JSONKit/build/Release-iphoneos/libJSONKit.a"; sourceTree = "<group>"; };
+		79C2E6EE167835D100BA6A8C /* libOAuth2Client.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOAuth2Client.a; path = "../OAuth2Client/build/Release-iphoneos/libOAuth2Client.a"; sourceTree = "<group>"; };
+		79C2E6EF167835D100BA6A8C /* libOHAttributedLabel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOHAttributedLabel.a; path = "../OHAttributedLabel/build/Release-iphoneos/libOHAttributedLabel.a"; sourceTree = "<group>"; };
+		79C2E6F0167835D100BA6A8C /* libSoundCloudAPI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSoundCloudAPI.a; path = "../CocoaSoundCloudAPI/build/Release-iphoneos/libSoundCloudAPI.a"; sourceTree = "<group>"; };
+		79C2E6F1167835D100BA6A8C /* libSoundCloudUI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSoundCloudUI.a; path = "../CocoaSoundCloudUI/build/Release-iphoneos/libSoundCloudUI.a"; sourceTree = "<group>"; };
 		79C2E6F8167835DE00BA6A8C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		79C2E6FA167835FA00BA6A8C /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		79C2E6FB167835FA00BA6A8C /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		79C2E6FC167835FA00BA6A8C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		79C2E6FD167835FA00BA6A8C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		79C2E7021678360600BA6A8C /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
-		79C2E7041678393000BA6A8C /* SoundCloud.bundle */ = {isa = PBXFileReference; lastKnownFileType = file; name = SoundCloud.bundle; path = ../CocoaSoundCloudUI/SoundCloud.bundle; sourceTree = "<group>"; };
+		79C2E7041678393000BA6A8C /* SoundCloud.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SoundCloud.bundle; path = ../CocoaSoundCloudUI/SoundCloud.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		795C593D167ED34300AD7219 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				795C593F167ED36700AD7219 /* UIImageView+URLLoader.h */,
+				795C5940167ED36700AD7219 /* UIImageView+URLLoader.m */,
+				795C5942167ED54300AD7219 /* TrackSummaryCell.h */,
+				795C5943167ED54300AD7219 /* TrackSummaryCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		79C2E69C167590E600BA6A8C = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +147,7 @@
 		79C2E6B1167590E600BA6A8C /* SoundCloudDemo */ = {
 			isa = PBXGroup;
 			children = (
+				795C593D167ED34300AD7219 /* Views */,
 				79C2E6BA167590E700BA6A8C /* AppDelegate.h */,
 				79C2E6BB167590E700BA6A8C /* AppDelegate.m */,
 				79C2E6C3167590E700BA6A8C /* ViewController.h */,
@@ -224,6 +242,8 @@
 				79C2E6B8167590E600BA6A8C /* main.m in Sources */,
 				79C2E6BC167590E700BA6A8C /* AppDelegate.m in Sources */,
 				79C2E6C5167590E700BA6A8C /* ViewController.m in Sources */,
+				795C5941167ED36700AD7219 /* UIImageView+URLLoader.m in Sources */,
+				795C5944167ED54300AD7219 /* TrackSummaryCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

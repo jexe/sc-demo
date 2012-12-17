@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+#define kTrackCellIdent @"SCTrackCell"
+
 @interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
-    UITableView *trackTable;
-    NSArray *tracks;
+    UITableView *_trackTable;
+    NSArray *_tracks;
 }
 
 @end
