@@ -129,5 +129,10 @@
     return [TrackSummaryCell cellForTable:tableView data:[_tracks objectAtIndex:indexPath.row]];
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
 
 @end
