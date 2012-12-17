@@ -8,12 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-#define kTrackCellHeight 60.0F
+#define kTrackCellHeight 100.0F
 
 @class RemoteImageView;
 
 @interface TrackSummaryCell : UITableViewCell {
     UIImageView *_waveForm;
+    UILabel *_title;
+    UILabel *_creationDate;
 }
 
 + (TrackSummaryCell *)cellForTable:(UITableView *)tableView data:(NSDictionary *)dict;

@@ -17,21 +17,33 @@
 {
     TrackSummaryCell *cell = [tableView dequeueReusableCellWithIdentifier:kTrackCellIdent];
     if (!cell) {
-        cell = [[TrackSummaryCell alloc] initWithStyle:UITableViewCellStyleDefault
-                                       reuseIdentifier:kTrackCellIdent];
+        cell = [[TrackSummaryCell alloc] initWithTableView:tableView];
     }
 
     [cell applyTrackData:dict];
     return cell;
 }
 
-- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+- (id)initWithTableView:(UITableView *)tableView
 {
-    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kTrackCellIdent];
+
     if (self) {
-        _waveForm = [[UIImageView alloc] initWithFrame:self.bounds];
-        _waveForm.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-        self.contentView.backgroundColor = [UIColor blackColor];
+    
+        CGFloat cellWidth = tableView.bounds.size.width;
+
+        // Layout & style components
+        self.clipsToBounds = YES;
+        self.contentView.backgroundColor = [UIColor darkGrayColor];
+
+        _waveForm = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, cellWidth, kTrackCellHeight*2)];
+        [self.contentView addSubview:_waveForm];
+    
+        _title = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, cellWidth, 20.0)];
+        _title.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.5];
+        _title.font = [UIFont systemFontOfSize:15.0];
+        _title.textColor = [UIColor blackColor];
+        [self.contentView addSubview:_title];
     }
     return self;
 }
@@ -39,6 +51,7 @@
 - (void)applyTrackData:(NSDictionary *)dict
 {
     [_waveForm loadURL:[dict objectForKey:@"waveform_url"]];
+    [_title setText:[dict objectForKey:@"title"]];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated

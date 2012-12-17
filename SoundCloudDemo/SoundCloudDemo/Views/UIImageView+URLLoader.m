@@ -8,7 +8,7 @@
 
 #import "UIImageView+URLLoader.h"
 
-@implementation UIImageView
+@implementation UIImageView (URLLoader)
 
 - (void)loadURL:(NSString *)path
 {
