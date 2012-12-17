@@ -39,7 +39,7 @@
 		795C5940167ED36700AD7219 /* UIImageView+URLLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+URLLoader.m"; path = "Views/UIImageView+URLLoader.m"; sourceTree = "<group>"; };
 		795C5942167ED54300AD7219 /* TrackSummaryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrackSummaryCell.h; path = Views/TrackSummaryCell.h; sourceTree = "<group>"; };
 		795C5943167ED54300AD7219 /* TrackSummaryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrackSummaryCell.m; path = Views/TrackSummaryCell.m; sourceTree = "<group>"; };
-		79C2E6A7167590E600BA6A8C /* SoundCloudDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundCloudDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79C2E6A7167590E600BA6A8C /* SCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79C2E6AB167590E600BA6A8C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		79C2E6AD167590E600BA6A8C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		79C2E6AF167590E600BA6A8C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -118,7 +118,7 @@
 		79C2E6A8167590E600BA6A8C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				79C2E6A7167590E600BA6A8C /* SoundCloudDemo.app */,
+				79C2E6A7167590E600BA6A8C /* SCDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -189,7 +189,7 @@
 			);
 			name = SoundCloudDemo;
 			productName = SoundCloudDemo;
-			productReference = 79C2E6A7167590E600BA6A8C /* SoundCloudDemo.app */;
+			productReference = 79C2E6A7167590E600BA6A8C /* SCDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -201,7 +201,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Jesse Boyes";
 			};
-			buildConfigurationList = 79C2E6A1167590E600BA6A8C /* Build configuration list for PBXProject "SoundCloudDemo" */;
+			buildConfigurationList = 79C2E6A1167590E600BA6A8C /* Build configuration list for PBXProject "SCDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -338,7 +338,7 @@
 				GCC_PREFIX_HEADER = "SoundCloudDemo/SoundCloudDemo-Prefix.pch";
 				INFOPLIST_FILE = "SoundCloudDemo/SoundCloudDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SCDemo;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -351,7 +351,7 @@
 				GCC_PREFIX_HEADER = "SoundCloudDemo/SoundCloudDemo-Prefix.pch";
 				INFOPLIST_FILE = "SoundCloudDemo/SoundCloudDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SCDemo;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -360,7 +360,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		79C2E6A1167590E600BA6A8C /* Build configuration list for PBXProject "SoundCloudDemo" */ = {
+		79C2E6A1167590E600BA6A8C /* Build configuration list for PBXProject "SCDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				79C2E6CC167590E700BA6A8C /* Debug */,

@@ -12,6 +12,7 @@
 
 @interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
     UITableView *_trackTable;
+
     NSArray *_tracks;
 }
 

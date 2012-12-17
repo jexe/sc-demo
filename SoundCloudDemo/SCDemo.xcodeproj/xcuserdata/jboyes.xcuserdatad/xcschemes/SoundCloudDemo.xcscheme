@@ -17,7 +17,7 @@
                BlueprintIdentifier = "79C2E6A6167590E600BA6A8C"
                BuildableName = "SoundCloudDemo.app"
                BlueprintName = "SoundCloudDemo"
-               ReferencedContainer = "container:SoundCloudDemo.xcodeproj">
+               ReferencedContainer = "container:SCDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
             BlueprintIdentifier = "79C2E6A6167590E600BA6A8C"
             BuildableName = "SoundCloudDemo.app"
             BlueprintName = "SoundCloudDemo"
-            ReferencedContainer = "container:SoundCloudDemo.xcodeproj">
+            ReferencedContainer = "container:SCDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -54,7 +54,7 @@
             BlueprintIdentifier = "79C2E6A6167590E600BA6A8C"
             BuildableName = "SoundCloudDemo.app"
             BlueprintName = "SoundCloudDemo"
-            ReferencedContainer = "container:SoundCloudDemo.xcodeproj">
+            ReferencedContainer = "container:SCDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -72,7 +72,7 @@
             BlueprintIdentifier = "79C2E6A6167590E600BA6A8C"
             BuildableName = "SoundCloudDemo.app"
             BlueprintName = "SoundCloudDemo"
-            ReferencedContainer = "container:SoundCloudDemo.xcodeproj">
+            ReferencedContainer = "container:SCDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -12,7 +12,6 @@
 
 - (void)loadURL:(NSString *)path
 {
-    NSLog(@"Downloading %@", path);
     [NSURLConnection sendAsynchronousRequest:[[NSURLRequest alloc] initWithURL:[NSURL URLWithString:path]]
                                        queue:[NSOperationQueue mainQueue]
                            completionHandler:^(NSURLResponse *res, NSData *data, NSError *err) {

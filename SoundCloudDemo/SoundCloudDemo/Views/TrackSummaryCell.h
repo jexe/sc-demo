@@ -14,6 +14,7 @@
 
 @interface TrackSummaryCell : UITableViewCell {
     UIImageView *_waveForm;
+    UIImageView *_avatar;
     UILabel *_title;
     UILabel *_creationDate;
 }

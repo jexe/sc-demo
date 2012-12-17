@@ -8,9 +8,12 @@
 
 #import "ViewController.h"
 #import <SCUI.h>
+#import <QuartzCore/QuartzCore.h>
 #import "TrackSummaryCell.h"
 
 #define kSoundCloudFavoritesLoadURL  @"https://api.soundcloud.com/me/favorites.json"
+
+#define kHeaderHeight 50.0
 
 @interface ViewController ()
 
@@ -24,12 +27,24 @@
 {
     [super viewDidLoad];
 
-    self.navigationController.navigationBarHidden = NO;
-
+    // Track listing
     _trackTable = [[UITableView alloc] initWithFrame:self.view.bounds];
     _trackTable.dataSource = self;
     _trackTable.delegate = self;
+    _trackTable.scrollIndicatorInsets = UIEdgeInsetsMake(kHeaderHeight, 0, 0, 0);
     [self.view addSubview:_trackTable];
+
+    // Header and logout button
+    UIView *header = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, kHeaderHeight)];
+    header.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.95];
+    UIButton *logoutButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    logoutButton.frame = CGRectMake(header.bounds.size.width - 80.0, 5.0, 70.0, kHeaderHeight-10.0);
+    [logoutButton setTintColor:[UIColor grayColor]];
+    [logoutButton.titleLabel setFont:[UIFont systemFontOfSize:14]];
+    [logoutButton setTitle:@"Sign out" forState:UIControlStateNormal];
+    [logoutButton addTarget:self action:@selector(logoutPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [header addSubview:logoutButton];
+    [self.view addSubview:header];
 }
 
 - (void)didReceiveMemoryWarning
@@ -43,7 +58,7 @@
     [super viewDidAppear:animated];
 
     if (![SCSoundCloud account]) {
-        [self login];
+        [self login:animated];
     } else {
         [self loadTracks];
     }
@@ -51,10 +66,12 @@
 
 #pragma mark - our UI
 
-- (void)logoutPressed
+- (void)logoutPressed:(id)sender
 {
     [SCSoundCloud removeAccess];
-    [self login];
+    _tracks = nil;
+    [_trackTable reloadData];
+    [self login:YES];
 }
 
 #pragma mark - SoundCloud hooks
@@ -84,7 +101,7 @@
     
 }
 
-- (void)login;
+- (void)login:(BOOL)animated
 {
     [SCSoundCloud requestAccessWithPreparedAuthorizationURLHandler:^(NSURL *preparedURL){
         
@@ -102,7 +119,7 @@
                                                                       }];
         
         [self presentModalViewController:loginViewController
-                                animated:YES];
+                                animated:animated];
         
     }];
 }
@@ -124,6 +141,17 @@
     return kTrackCellHeight;
 }
 
+// Create a header for TableView top padding.
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return kHeaderHeight;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    return [[UIView alloc] init];
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return [TrackSummaryCell cellForTable:tableView data:[_tracks objectAtIndex:indexPath.row]];
@@ -132,6 +160,17 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    NSDictionary *data = [_tracks objectAtIndex:indexPath.row];
+
+    // Attempt to open the app, fall back to the site
+    UIApplication *app = [UIApplication sharedApplication];
+    NSURL *appLaunchURL = [NSURL URLWithString:[NSString stringWithFormat:@"soundcloud:track:%@", [data objectForKey:@"id"]]];
+
+    if ([app canOpenURL:appLaunchURL]) {
+        [app openURL:appLaunchURL];
+    } else {
+        [app openURL:[NSURL URLWithString:[data objectForKey:@"permalink_url"]]];
+    }
 }
 
 
