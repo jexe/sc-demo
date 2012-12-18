@@ -32,7 +32,6 @@
     self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kTrackCellIdent];
 
     if (self) {
-    
         CGFloat cellWidth = tableView.bounds.size.width;
 
         // Layout & style components
@@ -54,6 +53,7 @@
         // Information bar: track name & date
         UIView *infoBar = [[UIView alloc] initWithFrame:CGRectMake(0, kTrackCellHeight-40.0, cellWidth, 40.0)];
         infoBar.backgroundColor = [UIColor colorWithRed:0.8 green:0.8 blue:0.9 alpha:0.75];
+
         _title = [[UILabel alloc] initWithFrame:CGRectMake(5, 0, cellWidth - 10, 20.0)];
         _title.backgroundColor = [UIColor clearColor];
         _title.font = [UIFont boldSystemFontOfSize:14.0];
@@ -84,7 +84,9 @@
         [s_dateFormatter setDateFormat:@"yyyy/MM/dd' 'HH:mm:ss' 'ZZZZ"];
     }
     NSDate *date = [s_dateFormatter dateFromString:[dict objectForKey:@"created_at"]];
-    _creationDate.text = [NSDateFormatter localizedStringFromDate:date dateStyle:NSDateFormatterMediumStyle timeStyle:NSDateFormatterShortStyle];
+    _creationDate.text = [NSDateFormatter localizedStringFromDate:date
+                                                        dateStyle:NSDateFormatterMediumStyle
+                                                        timeStyle:NSDateFormatterShortStyle];
 }
 
 @end
