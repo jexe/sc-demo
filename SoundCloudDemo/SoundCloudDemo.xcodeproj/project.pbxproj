@@ -201,7 +201,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Jesse Boyes";
 			};
-			buildConfigurationList = 79C2E6A1167590E600BA6A8C /* Build configuration list for PBXProject "SCDemo" */;
+			buildConfigurationList = 79C2E6A1167590E600BA6A8C /* Build configuration list for PBXProject "SoundCloudDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -360,7 +360,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		79C2E6A1167590E600BA6A8C /* Build configuration list for PBXProject "SCDemo" */ = {
+		79C2E6A1167590E600BA6A8C /* Build configuration list for PBXProject "SoundCloudDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				79C2E6CC167590E700BA6A8C /* Debug */,

@@ -37,6 +37,7 @@
     // Header and logout button
     UIView *header = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, kHeaderHeight)];
     header.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.95];
+
     UIButton *logoutButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     logoutButton.frame = CGRectMake(header.bounds.size.width - 80.0, 5.0, 70.0, kHeaderHeight-10.0);
     [logoutButton setTintColor:[UIColor grayColor]];
@@ -44,6 +45,13 @@
     [logoutButton setTitle:@"Sign out" forState:UIControlStateNormal];
     [logoutButton addTarget:self action:@selector(logoutPressed:) forControlEvents:UIControlEventTouchUpInside];
     [header addSubview:logoutButton];
+
+    UILabel *title = [[UILabel alloc] initWithFrame:header.bounds];
+    title.backgroundColor = [UIColor clearColor];
+    title.textAlignment = UITextAlignmentCenter;
+    title.text = @"★ Favorites";
+    [header addSubview:title];
+
     [self.view addSubview:header];
 }
 
