@@ -5,10 +5,7 @@
 *.xcodeproj/*.mode1v3
 *.xcodeproj/*.pbxuser
 *.xcodeproj/*.mode1v3
-*.xcodeproj/xcuserdata/
-*.xcodeproj/project.xcworkspace/xcuserdata/
 **/*.xcodeproj/*.mode1v3
 **/*.xcodeproj/*.pbxuser
 **/*.xcodeproj/*.mode1v3
-**/xcuserdata/
-**/*.xcodeproj/project.xcworkspace/xcuserdata/
+**/xcuserdata
