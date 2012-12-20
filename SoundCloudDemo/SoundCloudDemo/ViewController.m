@@ -6,10 +6,12 @@
 //  Copyright (c) 2012 Jesse Boyes. All rights reserved.
 //
 
-#import "ViewController.h"
 #import <SCUI.h>
 #import <QuartzCore/QuartzCore.h>
+
+#import "ViewController.h"
 #import "TrackSummaryCell.h"
+#import "AudioTrack.h"
 
 #define kSoundCloudFavoritesLoadURL  @"https://api.soundcloud.com/me/favorites.json"
 
@@ -98,11 +100,18 @@
                                                       options:0
                                                       error:&jsonError];
                  if (!jsonError && [jsonResponse isKindOfClass:[NSArray class]]) {
-                     NSLog(@"Success! %@", jsonResponse);
-                     _tracks = (NSArray *)jsonResponse;
+
+                     // Convert raw track data into AudioTracks
+                     NSArray *trackData = (NSArray *)jsonResponse;
+                     NSMutableArray *tracks = [NSMutableArray arrayWithCapacity:trackData.count];
+                     for (NSDictionary *data in trackData) {
+                         [tracks addObject:[[AudioTrack alloc] initWithData:data]];
+                     }
+
+                     _tracks = tracks;
                      [_trackTable reloadData];
                  } else {
-                     NSLog(@"Error decoding JSON response: %@ / Data: %@", jsonError, jsonResponse);
+                     NSLog(@"Error decoding JSON response: %@ / Data: %@", [jsonError localizedDescription], jsonResponse);
                  }
                  
              }];
@@ -162,22 +171,22 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return [TrackSummaryCell cellForTable:tableView data:[_tracks objectAtIndex:indexPath.row]];
+    return [TrackSummaryCell cellForTable:tableView track:[_tracks objectAtIndex:indexPath.row]];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    NSDictionary *data = [_tracks objectAtIndex:indexPath.row];
+    AudioTrack *track = [_tracks objectAtIndex:indexPath.row];
 
     // Attempt to open the app, fall back to the site
     UIApplication *app = [UIApplication sharedApplication];
-    NSURL *appLaunchURL = [NSURL URLWithString:[NSString stringWithFormat:@"soundcloud:track:%@", [data objectForKey:@"id"]]];
+    NSURL *appLaunchURL = track.appLaunchURL;
 
     if ([app canOpenURL:appLaunchURL]) {
         [app openURL:appLaunchURL];
     } else {
-        [app openURL:[NSURL URLWithString:[data objectForKey:@"permalink_url"]]];
+        [app openURL:track.soundCloudSiteURL];
     }
 }
 

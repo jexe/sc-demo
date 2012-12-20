@@ -10,13 +10,13 @@
 
 @implementation UIImageView (URLLoader)
 
-- (void)loadURL:(NSString *)path
+- (void)loadURL:(NSURL *)url
 {
-    [NSURLConnection sendAsynchronousRequest:[[NSURLRequest alloc] initWithURL:[NSURL URLWithString:path]]
+    [NSURLConnection sendAsynchronousRequest:[NSURLRequest requestWithURL:url]
                                        queue:[NSOperationQueue mainQueue]
                            completionHandler:^(NSURLResponse *res, NSData *data, NSError *err) {
                                if (err) {
-                                   NSLog(@"Error downloading image: %@", err);
+                                   NSLog(@"Error downloading image: %@", [err localizedDescription]);
                                } else {
                                    [self performSelectorOnMainThread:@selector(setImage:)
                                                           withObject:[UIImage imageWithData:data]

@@ -8,6 +8,7 @@
 
 #import "TrackSummaryCell.h"
 #import "UIImageView+URLLoader.h"
+#import "AudioTrack.h"
 #import <QuartzCore/QuartzCore.h>
 
 #define kTrackCellIdent @"SCTrackCell"
@@ -16,14 +17,14 @@
 
 @implementation TrackSummaryCell
 
-+ (TrackSummaryCell *)cellForTable:(UITableView *)tableView data:(NSDictionary *)dict
++ (TrackSummaryCell *)cellForTable:(UITableView *)tableView track:(AudioTrack *)track
 {
     TrackSummaryCell *cell = [tableView dequeueReusableCellWithIdentifier:kTrackCellIdent];
     if (!cell) {
         cell = [[TrackSummaryCell alloc] initWithTableView:tableView];
     }
 
-    [cell applyTrackData:dict];
+    [cell applyTrack:track];
     return cell;
 }
 
@@ -71,20 +72,13 @@
     return self;
 }
 
-- (void)applyTrackData:(NSDictionary *)dict
+- (void)applyTrack:(AudioTrack *)track
 {
-    static NSDateFormatter *s_dateFormatter = nil;
+    [_waveForm loadURL:track.waveformImageURL];
+    [_avatar loadURL:track.avatarURL];
+    _title.text = track.title;
 
-    [_waveForm loadURL:[dict objectForKey:@"waveform_url"]];
-    [_avatar loadURL:[[dict objectForKey:@"user"] objectForKey:@"avatar_url"]];
-    _title.text = [dict objectForKey:@"title"];
-
-    if (!s_dateFormatter) {
-        s_dateFormatter = [[NSDateFormatter alloc] init];
-        [s_dateFormatter setDateFormat:@"yyyy/MM/dd' 'HH:mm:ss' 'ZZZZ"];
-    }
-    NSDate *date = [s_dateFormatter dateFromString:[dict objectForKey:@"created_at"]];
-    _creationDate.text = [NSDateFormatter localizedStringFromDate:date
+    _creationDate.text = [NSDateFormatter localizedStringFromDate:track.creationDate
                                                         dateStyle:NSDateFormatterMediumStyle
                                                         timeStyle:NSDateFormatterShortStyle];
 }

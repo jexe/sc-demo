@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		795C5941167ED36700AD7219 /* UIImageView+URLLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 795C5940167ED36700AD7219 /* UIImageView+URLLoader.m */; };
 		795C5944167ED54300AD7219 /* TrackSummaryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 795C5943167ED54300AD7219 /* TrackSummaryCell.m */; };
+		795C59EB16835D5C00AD7219 /* AudioTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 795C59EA16835D5C00AD7219 /* AudioTrack.m */; };
 		79C2E6AC167590E600BA6A8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C2E6AB167590E600BA6A8C /* UIKit.framework */; };
 		79C2E6AE167590E600BA6A8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C2E6AD167590E600BA6A8C /* Foundation.framework */; };
 		79C2E6B0167590E600BA6A8C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C2E6AF167590E600BA6A8C /* CoreGraphics.framework */; };
@@ -39,6 +40,8 @@
 		795C5940167ED36700AD7219 /* UIImageView+URLLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+URLLoader.m"; path = "Views/UIImageView+URLLoader.m"; sourceTree = "<group>"; };
 		795C5942167ED54300AD7219 /* TrackSummaryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrackSummaryCell.h; path = Views/TrackSummaryCell.h; sourceTree = "<group>"; };
 		795C5943167ED54300AD7219 /* TrackSummaryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrackSummaryCell.m; path = Views/TrackSummaryCell.m; sourceTree = "<group>"; };
+		795C59E916835D5C00AD7219 /* AudioTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioTrack.h; path = Models/AudioTrack.h; sourceTree = "<group>"; };
+		795C59EA16835D5C00AD7219 /* AudioTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudioTrack.m; path = Models/AudioTrack.m; sourceTree = "<group>"; };
 		79C2E6A7167590E600BA6A8C /* SCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79C2E6AB167590E600BA6A8C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		79C2E6AD167590E600BA6A8C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -105,6 +108,15 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		795C59E716835D3200AD7219 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				795C59E916835D5C00AD7219 /* AudioTrack.h */,
+				795C59EA16835D5C00AD7219 /* AudioTrack.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		79C2E69C167590E600BA6A8C = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +159,7 @@
 		79C2E6B1167590E600BA6A8C /* SoundCloudDemo */ = {
 			isa = PBXGroup;
 			children = (
+				795C59E716835D3200AD7219 /* Models */,
 				795C593D167ED34300AD7219 /* Views */,
 				79C2E6BA167590E700BA6A8C /* AppDelegate.h */,
 				79C2E6BB167590E700BA6A8C /* AppDelegate.m */,
@@ -244,6 +257,7 @@
 				79C2E6C5167590E700BA6A8C /* ViewController.m in Sources */,
 				795C5941167ED36700AD7219 /* UIImageView+URLLoader.m in Sources */,
 				795C5944167ED54300AD7219 /* TrackSummaryCell.m in Sources */,
+				795C59EB16835D5C00AD7219 /* AudioTrack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

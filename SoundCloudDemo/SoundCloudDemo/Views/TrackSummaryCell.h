@@ -10,7 +10,7 @@
 
 #define kTrackCellHeight 100.0F
 
-@class RemoteImageView;
+@class AudioTrack, RemoteImageView;
 
 @interface TrackSummaryCell : UITableViewCell {
     UIImageView *_waveForm;
@@ -19,6 +19,6 @@
     UILabel *_creationDate;
 }
 
-+ (TrackSummaryCell *)cellForTable:(UITableView *)tableView data:(NSDictionary *)dict;
++ (TrackSummaryCell *)cellForTable:(UITableView *)tableView track:(AudioTrack *)track;
 
 @end

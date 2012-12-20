@@ -12,5 +12,5 @@
 
 @interface UIImageView (URLLoader)
 
-- (void)loadURL:(NSString *)path;
+- (void)loadURL:(NSURL *)url;
 @end
