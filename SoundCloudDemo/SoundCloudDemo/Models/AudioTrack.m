@@ -8,6 +8,7 @@
 
 #import "AudioTrack.h"
 
+
 @implementation AudioTrack
 
 - (id)initWithData:(NSDictionary *)data
@@ -17,17 +18,17 @@
     self = [super init];
 
     if (self) {
-        self.soundCloudSiteURL = [NSURL URLWithString:[data objectForKey:@"permalink_url"]];
-        self.avatarURL = [NSURL URLWithString:[[data objectForKey:@"user"] objectForKey:@"avatar_url"]];
-        self.waveformImageURL = [NSURL URLWithString:[data objectForKey:@"waveform_url"]];
-        self.title = [data objectForKey:@"title"];
-        self.trackID = [data objectForKey:@"id"];
+        _soundCloudSiteURL = [NSURL URLWithString:[data objectForKey:@"permalink_url"]];
+        _avatarURL = [NSURL URLWithString:[[data objectForKey:@"user"] objectForKey:@"avatar_url"]];
+        _waveformImageURL = [NSURL URLWithString:[data objectForKey:@"waveform_url"]];
+        _title = [data objectForKey:@"title"];
+        _trackID = [data objectForKey:@"id"];
 
         if (!s_dateFormatter) {
             s_dateFormatter = [[NSDateFormatter alloc] init];
             [s_dateFormatter setDateFormat:@"yyyy/MM/dd' 'HH:mm:ss' 'ZZZZ"];
         }
-        self.creationDate = [s_dateFormatter dateFromString:[data objectForKey:@"created_at"]];
+        _creationDate = [s_dateFormatter dateFromString:[data objectForKey:@"created_at"]];
     }
     return self;
 }

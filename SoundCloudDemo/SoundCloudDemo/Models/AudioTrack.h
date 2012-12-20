@@ -10,13 +10,13 @@
 
 @interface AudioTrack : NSObject
 
-@property (nonatomic, retain) NSString *trackID;
-@property (nonatomic, retain) NSString *title;
-@property (nonatomic, retain) NSURL *waveformImageURL;
-@property (nonatomic, retain) NSURL *avatarURL;
-@property (nonatomic, retain) NSURL *soundCloudSiteURL;
+@property (readonly) NSString *trackID;
+@property (readonly) NSString *title;
+@property (readonly) NSURL *waveformImageURL;
+@property (readonly) NSURL *avatarURL;
+@property (readonly) NSURL *soundCloudSiteURL;
 @property (readonly) NSURL *appLaunchURL;
-@property (nonatomic, retain) NSDate *creationDate;
+@property (readonly) NSDate *creationDate;
 
 - (AudioTrack *)initWithData:(NSDictionary *)data;
 
